@@ -1,0 +1,122 @@
+@font-face{
+    font-family: 'Raleway Regular';
+    font-weight: 400;
+    src: url('../Raleway-Regular.ttf');
+}
+
+body{
+    color: #181818;
+    font-family: 'Raleway Regular';
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    background-color: #facda0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 17px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    width: 180px;
+}
+
+.button:hover{
+    background-color: #c59566;
+}
+
+.app {
+    margin: 3em auto;
+    width: 90%;
+}
+
+.logo{
+    color: #facda0;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.gif-item {
+    box-shadow: 2px 2px 4px 0 #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 0 1.5em;
+    padding: 1em;
+    width: 100%;
+}
+
+.gif-item img {
+    width: 100%;
+}
+
+.gif-list {
+    column-gap: 1.5em;
+    font-size: .85em;
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+.gif-modal {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+input {
+    border: 1px solid #facda0;
+    border-radius: 3px;
+    display: block;
+    font-family: 'Raleway Regular';
+    font-size: 17px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+@media only screen and (min-width: 400px) {
+    .gif-list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .gif-list {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .gif-list {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .gif-list {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .app {
+        width: 1140px;
+    }
+}
